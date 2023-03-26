@@ -57,7 +57,8 @@
     <!-- /////////// -->
     <!-- Start Main -->
     <!--Start Form -->
-  <main>
+    <!-- Start Task-1 -->
+  <!-- <main>
     <div class="main container-fluid mt-5" id="Student-Info">
       <form class="w-50" id="inputForm" >
         <fieldset >
@@ -109,11 +110,12 @@
           <button type="submit" class="btn btn-primary  w-50">Submit</button>
         </fieldset>
       </form>
-    </div>
-  
+    </div> -->
+    <!-- End Task-1 -->
     <!--End Form -->
+    <!-- Start Task-1 -->
     <!--Start Table -->
-    <div class="tableCon container-fluid ">
+    <!-- <div class="tableCon container-fluid ">
       <table class="table caption-top table-light">
         <legend class="fw-bold fs-2 text-white mb-5">Current Student Information</legend>
         <thead class="table-light" id="T-Head">
@@ -140,8 +142,83 @@
         <a class="text-white" href="#">School.com</a>
       </div>
     </footer>
-  </main>
+  </main> -->
+    <!-- End Task-1 -->
     <!--End Table -->
+    <!-- /////////// -->
+    <!-- Start Task-2 -->
+    <main>
+      <div class="main container-fluid mt-5" id="Student-Info">
+        <form class="w-50" id="inputForm" >
+          <fieldset >
+            <legend class="fw-bold fs-2 text-white">Student Information</legend>
+            <div class="mb-3">
+              <label class="form-label fs-5 text-white">Full Name</label>
+              <input type="text" class="form-control fs-5" placeholder="Insert your name" id="Student-Name" name="Sname" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fs-5 text-white">Date of Birth</label>
+              <input type="date" class="form-control fs-5" name="DOF" required>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input " type="checkbox" value="Male" name="Male">
+                <label class="form-check-label fs-5 text-white">
+                  Male
+                </label>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Female" name="Female">
+                <label class="form-check-label fs-5 text-white">
+                  Female
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-white">Grade</label>
+                <select class="form-select fs-5" name="Major" required>
+                  <option>Administration</option>
+                  <option>IT</option>
+                  <option>Science</option>
+                  <option>Art</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fs-5 text-white">image</label>
+                <input type="tel" class="form-control fs-5" value="./image/f.png"  name="img" required placeholder="">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fs-5 text-white">Phone Number</label>
+                <input type="tel" class="form-control fs-5" placeholder="+962********" name="pn" required>
+              </div>
+            <button type="submit" class="btn btn-primary  w-50">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      <!-- End Task-1 -->
+      <!--End Form -->
+      <!-- Start Task-1 -->
+      <!--Start Table -->
+      <div class="tableCon container-fluid">
+        <legend class="fw-bold fs-2 text-white">Current Student Information</legend>
+        <div class="container d-flex flex-row justify-content-center mb-3 pt-5" id="Submit-Info">
+          
+        </div>
+      </div>
+      <footer class="text-center text-white bg-gradient">
+        <div class="container text-center p-3">
+          <i class="fa-brands fa-youtube fs-4 me-4"></i>
+          <i class="fa-brands fa-facebook fs-4"></i>
+          <i class="fa-brands fa-twitter fs-4 ms-4"></i>
+        </div>
+        <div class="container text-center p-3">
+          © 2023 Copyright:
+          <a class="text-white" href="#">School.com</a>
+        </div>
+      </footer>
+    </main>
+    <!-- End Task-2 -->
     <!-- /////////// -->
     <!-- End Main -->
     <!-- /////////// -->
@@ -159,7 +236,7 @@
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
     ></script>
-    <script src="./app.js">
+    <script src="app.js">
     </script>
   </body>
 </html>

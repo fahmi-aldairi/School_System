@@ -1,6 +1,6 @@
 /* Start Navbar */
-body{
-  background-color: #10171D;
+body {
+  background-color: #10171d;
 }
 
 .nav {
@@ -38,20 +38,27 @@ body{
 /* End Navbar */
 /* ////////////////// */
 /* Start main */
-.main{
+.main {
   padding-top: 5.5rem;
   padding-left: 1rem;
-
 }
-.main form{
+.main form {
   margin-bottom: 10rem;
 }
 
-.tableCon{
+.tableCon {
   top: 130%;
   left: 0;
   margin-bottom: 10rem;
+  justify-content: center;
 }
+
+/* @media (max-width=768px) {
+  .tableCon {
+    display: flex;
+    flex-direction: column;
+  }
+} */
 /* End main */
 /* ////////////////// */
 
