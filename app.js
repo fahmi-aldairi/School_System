@@ -128,10 +128,14 @@ let studentInfo = document.getElementById("Student-Info");
 let submittedInfo = document.getElementById("Submit-Info");
 let stuName, date, male, female, major, imG, phone;
 
-let stData = JSON.parse(localStorage.getItem("stData")) || [];
-updated();
+let stData = [];
+if (localStorage.getItem("stData") !== null) {
+  stData = JSON.parse(localStorage.getItem("stData"));
+  updated();
+}
 
 studentInfo.addEventListener("submit", (event) => {
+  event.preventDefault();
   stuName = event.target.Sname.value;
   date = event.target.DOF.value;
   male = event.target.Male.checked;
@@ -150,7 +154,7 @@ studentInfo.addEventListener("submit", (event) => {
     male = "female";
   }
 
-  console.log(stuName, date, male, major, imG, phone);
+  // console.log(stuName, date, male, major, imG, phone);
   let studentData = new stu(stuName, date, male, major, imG, phone);
   stData.push(studentData);
   localStorage.setItem("stData", JSON.stringify(stData));
@@ -167,6 +171,7 @@ function stu(stuName, date, male, major, imG, phone) {
 }
 
 function updated() {
+  submittedInfo.textContent = "";
   for (i = 0; i < stData.length; i++) {
     let cardDiv = document.createElement("div");
     let cardImag = document.createElement("img");
